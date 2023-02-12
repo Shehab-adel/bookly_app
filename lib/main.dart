@@ -12,10 +12,14 @@ class BooklyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      theme: ThemeData(useMaterial3: true, scaffoldBackgroundColor: kprimary),
-      home: const SplashScreen(),
+    return SafeArea(
+      child: MaterialApp(
+        debugShowCheckedModeBanner: false,
+        theme: ThemeData(
+          useMaterial3: true,
+        ).copyWith(scaffoldBackgroundColor: kprimary),
+        home: const SplashScreen(),
+      ),
     );
   }
 }

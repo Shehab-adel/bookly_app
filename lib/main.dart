@@ -1,3 +1,4 @@
+import 'package:bookly_app/constants/constants.dart';
 import 'package:bookly_app/view/screens/splash_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -13,10 +14,7 @@ class BooklyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
-      ),
+      theme: ThemeData(useMaterial3: true, scaffoldBackgroundColor: kprimary),
       home: const SplashScreen(),
     );
   }

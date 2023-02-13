@@ -1,5 +1,8 @@
+import 'package:bookly_app/features/home/home_screen.dart';
 import 'package:flutter/material.dart';
+import '../../../constants/constants.dart';
 import '../../../core/utils/asset_images.dart';
+import 'package:get/get.dart';
 
 class SpalshBodyWidget extends StatefulWidget {
   const SpalshBodyWidget({super.key});
@@ -15,6 +18,18 @@ class _SpalshBodyWidgetState extends State<SpalshBodyWidget>
   @override
   void initState() {
     super.initState();
+    initSlideAnimation();
+    navigationToHomeScreen();
+  }
+
+  void navigationToHomeScreen() {
+    Future.delayed(kDuration, () {
+      Get.to(() => const HomeScreen(),
+          transition: Transition.fade, duration: kDuration);
+    });
+  }
+
+  void initSlideAnimation() {
     slideAnimationController =
         AnimationController(duration: const Duration(seconds: 2), vsync: this);
     slideAnimation = Tween<Offset>(begin: const Offset(0, 3), end: Offset.zero)

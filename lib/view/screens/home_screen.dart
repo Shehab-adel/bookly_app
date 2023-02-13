@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-
-import 'widgets/home_screen/custom_appbare_widget.dart';
+import 'widgets/home_screen/Row_appbare_Widget.dart';
+import 'widgets/home_screen/list_view_widget.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -8,7 +8,12 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
-      body: CustomAppBareWidget(),
+      body: Column(
+        children: [
+          RowAppBareWidget(),
+          ListViewWidget(),
+        ],
+      ),
     );
   }
 }

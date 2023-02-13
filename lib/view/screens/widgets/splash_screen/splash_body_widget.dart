@@ -1,7 +1,7 @@
-import 'package:bookly_app/features/home/home_screen.dart';
+import 'package:bookly_app/view/screens/home_screen.dart';
 import 'package:flutter/material.dart';
-import '../../../constants/constants.dart';
-import '../../../core/utils/asset_images.dart';
+import '../../../../constants/constants.dart';
+import '../../../../core/utils/asset_images.dart';
 import 'package:get/get.dart';
 
 class SpalshBodyWidget extends StatefulWidget {
@@ -23,9 +23,9 @@ class _SpalshBodyWidgetState extends State<SpalshBodyWidget>
   }
 
   void navigationToHomeScreen() {
-    Future.delayed(kDuration, () {
+    Future.delayed(kDuration2, () {
       Get.to(() => const HomeScreen(),
-          transition: Transition.fade, duration: kDuration);
+          transition: Transition.fade, duration: kDuration1);
     });
   }
 
@@ -35,6 +35,12 @@ class _SpalshBodyWidgetState extends State<SpalshBodyWidget>
     slideAnimation = Tween<Offset>(begin: const Offset(0, 3), end: Offset.zero)
         .animate(slideAnimationController);
     slideAnimationController.forward();
+  }
+
+  @override
+  void dispose() {
+    slideAnimationController.dispose();
+    super.dispose();
   }
 
   @override

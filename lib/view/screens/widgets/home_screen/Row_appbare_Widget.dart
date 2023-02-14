@@ -8,11 +8,8 @@ class RowAppBareWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
     return Padding(
-      padding: EdgeInsets.only(
-          right: size.width * .06,
-          top: size.width * .06,
-          left: size.width * .06,
-          bottom: size.height * .03),
+      padding:
+          EdgeInsets.only(top: size.width * .06, bottom: size.height * .03),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [

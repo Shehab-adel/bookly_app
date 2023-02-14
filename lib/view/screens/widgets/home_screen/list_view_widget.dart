@@ -9,7 +9,6 @@ class ListViewWidget extends StatelessWidget {
     Size size = MediaQuery.of(context).size;
     return Container(
         height: size.height * .4,
-        margin: EdgeInsets.symmetric(horizontal: size.width * .04),
         child: ListView.builder(
             scrollDirection: Axis.horizontal,
             itemCount: 5,

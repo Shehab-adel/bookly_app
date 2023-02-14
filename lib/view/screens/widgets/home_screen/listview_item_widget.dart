@@ -8,7 +8,6 @@ class ListViewItemWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
     return Container(
-      height: size.height * .4,
       width: size.width * .5,
       decoration: const BoxDecoration(
           borderRadius: BorderRadius.all(Radius.circular(50)),

@@ -12,11 +12,11 @@ class HomeScreen extends StatelessWidget {
       body: Padding(
         padding: EdgeInsets.symmetric(
             horizontal: MediaQuery.of(context).size.width * .04),
-        child: const Column(
+        child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            RowAppBareWidget(),
-            ListViewWidget(),
+            const RowAppBareWidget(),
+            const ListViewWidget(),
             Text(
               'Best Seller',
               style: Styles.tilteMedium,

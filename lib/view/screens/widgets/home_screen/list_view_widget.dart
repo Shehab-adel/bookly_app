@@ -1,5 +1,5 @@
-import 'package:bookly_app/core/utils/asset_images.dart';
 import 'package:flutter/material.dart';
+import 'listview_item_widget.dart';
 
 class ListViewWidget extends StatelessWidget {
   const ListViewWidget({super.key});
@@ -7,16 +7,12 @@ class ListViewWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
-    return SizedBox(
+    return Container(
         height: size.height * .4,
-        width: size.width,
+        margin: EdgeInsets.symmetric(horizontal: size.width * .04),
         child: ListView.builder(
-          scrollDirection: Axis.horizontal,
-          itemCount: 5,
-          itemBuilder: (context, index) => Image.asset(
-            Assets.bookHighlight,
-            fit: BoxFit.contain,
-          ),
-        ));
+            scrollDirection: Axis.horizontal,
+            itemCount: 5,
+            itemBuilder: (context, index) => const ListViewItemWidget()));
   }
 }

@@ -12,7 +12,7 @@ class RowAppBareWidget extends StatelessWidget {
           right: size.width * .06,
           top: size.width * .06,
           left: size.width * .06,
-          bottom: size.height * .07),
+          bottom: size.height * .03),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [

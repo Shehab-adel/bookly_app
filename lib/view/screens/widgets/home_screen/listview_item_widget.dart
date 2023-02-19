@@ -6,15 +6,9 @@ class ListViewItemWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    Size size = MediaQuery.of(context).size;
-    return Container(
-      width: size.width * .5,
-      decoration: const BoxDecoration(
-          borderRadius: BorderRadius.all(Radius.circular(50)),
-          image: DecorationImage(
-            image: AssetImage(Assets.bookHighlight),
-            fit: BoxFit.contain,
-          )),
+    return Image.asset(
+      Assets.bookHighlight,
+      fit: BoxFit.fill,
     );
   }
 }

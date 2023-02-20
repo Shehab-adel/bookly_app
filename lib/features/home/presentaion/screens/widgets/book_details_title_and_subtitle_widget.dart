@@ -1,4 +1,5 @@
 import 'package:bookly_app/core/utils/styles.dart';
+import 'package:bookly_app/features/home/presentaion/screens/widgets/best_seller/rating_row_widget.dart';
 import 'package:flutter/material.dart';
 
 class BookDetailsTitleAndSubTitle extends StatelessWidget {
@@ -12,7 +13,7 @@ class BookDetailsTitleAndSubTitle extends StatelessWidget {
           'The Jungle Book',
           style: Styles.textStyle30,
         ),
-        SizedBox(
+        const SizedBox(
           height: 6,
         ),
         Opacity(
@@ -21,7 +22,11 @@ class BookDetailsTitleAndSubTitle extends StatelessWidget {
             'Rudyard Kipling',
             style: Styles.textStyle18.copyWith(fontWeight: FontWeight.w500),
           ),
-        )
+        ),
+        const SizedBox(
+          height: 13,
+        ),
+        const RatingRowWidget()
       ],
     );
   }

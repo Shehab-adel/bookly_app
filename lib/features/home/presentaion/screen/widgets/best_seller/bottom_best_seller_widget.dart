@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
-import '../../../../../constants/constants.dart';
-import '../../../../../core/utils/styles.dart';
+import '../../../../../../constants/constants.dart';
+import '../../../../../../core/utils/styles.dart';
 
 class BottomBestSellerWidget extends StatelessWidget {
   const BottomBestSellerWidget({super.key});

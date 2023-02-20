@@ -1,8 +1,8 @@
-import 'package:bookly_app/view/screens/home_screen.dart';
+import 'package:bookly_app/core/utils/routes.dart';
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import '../../../../constants/constants.dart';
 import '../../../../core/utils/asset_images.dart';
-import 'package:get/get.dart';
 
 class SpalshBodyWidget extends StatefulWidget {
   const SpalshBodyWidget({super.key});
@@ -24,8 +24,7 @@ class _SpalshBodyWidgetState extends State<SpalshBodyWidget>
 
   void navigationToHomeScreen() {
     Future.delayed(kDuration2, () {
-      Get.to(() => const HomeScreen(),
-          transition: Transition.fade, duration: kDuration1);
+      GoRouter.of(context).push(AppRoutes.homeScreenRoute);
     });
   }
 

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../../../../core/utils/styles.dart';
+import '../../../../../../core/utils/styles.dart';
 
 class TopBestSellerWidget extends StatelessWidget {
   const TopBestSellerWidget({super.key});

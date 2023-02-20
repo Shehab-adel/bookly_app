@@ -1,6 +1,5 @@
-import 'package:bookly_app/view/screens/splash_screen.dart';
+import 'package:bookly_app/core/utils/routes.dart';
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'constants/constants.dart';
 
@@ -15,14 +14,13 @@ class BooklyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SafeArea(
-      child: MaterialApp(
+      child: MaterialApp.router(
         debugShowCheckedModeBanner: false,
-        navigatorKey: Get.key,
         theme: ThemeData.dark(useMaterial3: true).copyWith(
             scaffoldBackgroundColor: kPrimary,
             textTheme:
                 GoogleFonts.montserratTextTheme(ThemeData.dark().textTheme)),
-        home: const SplashScreen(),
+        routerConfig: AppRoutes.router,
       ),
     );
   }

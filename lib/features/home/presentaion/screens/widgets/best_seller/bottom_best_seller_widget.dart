@@ -25,9 +25,12 @@ class BottomBestSellerWidget extends StatelessWidget {
           style: Styles.textStyle16,
         ),
         const SizedBox(width: 5),
-        Text(
-          "(2390)",
-          style: Styles.textStyle14.copyWith(fontWeight: FontWeight.w400),
+        Opacity(
+          opacity: .7,
+          child: Text(
+            "(2390)",
+            style: Styles.textStyle14.copyWith(fontWeight: FontWeight.w400),
+          ),
         )
       ],
     );

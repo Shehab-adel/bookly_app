@@ -16,8 +16,15 @@ abstract class Styles {
       fontSize: 22, fontWeight: FontWeight.bold, fontFamily: kGTSectraRegular);
 
   static TextStyle textStyle14 = const TextStyle(
-      fontSize: 14, fontWeight: FontWeight.w500, color: Color(0xff707070));
+    fontSize: 14,
+    fontWeight: FontWeight.w500,
+  );
 
   static TextStyle textStyle16 = const TextStyle(
       fontSize: 16, fontWeight: FontWeight.w500, fontFamily: kGTSectraRegular);
+
+  static TextStyle textStyle30 = const TextStyle(
+      fontSize: 30,
+      fontWeight: FontWeight.normal,
+      fontFamily: kGTSectraRegular);
 }

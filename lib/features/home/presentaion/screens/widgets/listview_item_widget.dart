@@ -10,7 +10,7 @@ class ListViewItemWidget extends StatelessWidget {
       aspectRatio: .6,
       child: Container(
         decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(30),
+            borderRadius: BorderRadius.circular(20),
             image: const DecorationImage(
                 image: AssetImage(
                   Assets.bookHighlight,

@@ -2,6 +2,8 @@ import 'package:bookly_app/features/home/presentaion/screens/widgets/book_detail
 import 'package:bookly_app/features/home/presentaion/screens/widgets/listview_item_widget.dart';
 import 'package:flutter/material.dart';
 
+import 'widgets/book_details_title_and_subtitle_widget.dart';
+
 class BookDetailsScreen extends StatelessWidget {
   const BookDetailsScreen({super.key});
 
@@ -16,9 +18,10 @@ class BookDetailsScreen extends StatelessWidget {
             const BookDetailsScreenAppbareWidget(),
             Padding(
               padding: EdgeInsets.symmetric(
-                  horizontal: size.width * .16, vertical: size.height * .04),
+                  horizontal: size.width * .18, vertical: size.height * .04),
               child: const ListViewItemWidget(),
-            )
+            ),
+            const BookDetailsTitleAndSubTitle(),
           ],
         ),
       ),

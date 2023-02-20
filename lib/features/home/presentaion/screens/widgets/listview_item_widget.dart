@@ -6,9 +6,17 @@ class ListViewItemWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Image.asset(
-      Assets.bookHighlight,
-      fit: BoxFit.fill,
+    return AspectRatio(
+      aspectRatio: .6,
+      child: Container(
+        decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(30),
+            image: const DecorationImage(
+                image: AssetImage(
+                  Assets.bookHighlight,
+                ),
+                fit: BoxFit.fill)),
+      ),
     );
   }
 }

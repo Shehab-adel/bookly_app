@@ -1,3 +1,4 @@
+import 'package:bookly_app/features/splash_screen/screen/widgets/splash_body_widget.dart';
 import 'package:flutter/material.dart';
 
 class SplashScreen extends StatelessWidget {
@@ -5,11 +6,6 @@ class SplashScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      color: Colors.white,
-      child: const Placeholder(
-        color: Colors.red,
-      ),
-    );
+    return const Scaffold(body: SpalshBodyWidget());
   }
 }

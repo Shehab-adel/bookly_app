@@ -1,4 +1,4 @@
-import 'package:bookly_app/features/home/presentaion/screens/widgets/best_seller/rating_row_widget.dart';
+import 'package:bookly_app/features/home/presentaion/screen/widgets/best_seller/rating_row_widget.dart';
 import 'package:flutter/material.dart';
 import '../../../../../../core/utils/styles.dart';
 

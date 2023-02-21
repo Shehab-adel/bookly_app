@@ -1,3 +1,4 @@
+import 'package:bookly_app/core/utils/styles.dart';
 import 'package:bookly_app/features/search/presentation/screen/widgets/appbare_section/search_text_field_widget.dart';
 import 'package:bookly_app/features/search/presentation/screen/widgets/seach_body_section/search_list_view_widget.dart';
 import 'package:flutter/material.dart';
@@ -7,11 +8,22 @@ class SearchScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return Scaffold(
       body: Padding(
-        padding: EdgeInsets.all(15.0),
+        padding: const EdgeInsets.all(15.0),
         child: Column(
-          children: [SearchTextForm(), SearchListViewWidget()],
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            const SearchTextForm(),
+            Text(
+              'Search results',
+              style: Styles.textStyle18,
+            ),
+            const SizedBox(
+              height: 16,
+            ),
+            const SearchListViewWidget()
+          ],
         ),
       ),
     );

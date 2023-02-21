@@ -36,7 +36,7 @@ class HomeScreen extends StatelessWidget {
           ),
           const SliverFillRemaining(
             child: BestSellerListviewWidget(),
-          )
+          ),
         ],
       ),
     ));

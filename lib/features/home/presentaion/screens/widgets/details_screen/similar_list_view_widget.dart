@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import '../listview_item_widget.dart';
 
 class SimilarListViewWidget extends StatelessWidget {

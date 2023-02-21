@@ -1,7 +1,7 @@
 import 'package:bookly_app/core/utils/styles.dart';
-import 'package:bookly_app/features/home/presentaion/screens/widgets/details_screen/book_details_screen_appbare_widget.dart';
-import 'package:bookly_app/features/home/presentaion/screens/widgets/details_screen/button_action.dart';
-import 'package:bookly_app/features/home/presentaion/screens/widgets/listview_item_widget.dart';
+import 'package:bookly_app/features/home/presentaion/screen/widgets/details_screen/book_details_screen_appbare_widget.dart';
+import 'package:bookly_app/features/home/presentaion/screen/widgets/details_screen/button_action.dart';
+import 'package:bookly_app/features/home/presentaion/screen/widgets/listview_item_widget.dart';
 import 'package:flutter/material.dart';
 import 'widgets/details_screen/book_details_title_and_subtitle_widget.dart';
 import 'widgets/details_screen/similar_list_view_widget.dart';
@@ -18,6 +18,7 @@ class BookDetailsScreen extends StatelessWidget {
           child: CustomScrollView(
             slivers: [
               SliverFillRemaining(
+                hasScrollBody: false,
                 child: Column(
                   children: [
                     const BookDetailsScreenAppbareWidget(),

@@ -1,5 +1,7 @@
 import 'package:bookly_app/core/utils/asset_images.dart';
+import 'package:bookly_app/core/utils/routes.dart';
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
 class RowAppBareWidget extends StatelessWidget {
   const RowAppBareWidget({super.key});
@@ -14,7 +16,10 @@ class RowAppBareWidget extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           Image.asset(Assets.logo),
-          Image.asset(Assets.search),
+          GestureDetector(
+              onTap: () =>
+                  GoRouter.of(context).push(AppRoutes.searchScreenRoute),
+              child: Image.asset(Assets.search)),
         ],
       ),
     );

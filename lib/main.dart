@@ -4,11 +4,11 @@ import 'package:google_fonts/google_fonts.dart';
 import 'constants/constants.dart';
 
 void main() {
-  runApp(const BooklyApp());
+  runApp(const BookApp());
 }
 
-class BooklyApp extends StatelessWidget {
-  const BooklyApp({super.key});
+class BookApp extends StatelessWidget {
+  const BookApp({super.key});
 
   // This widget is the root of your application.
   @override

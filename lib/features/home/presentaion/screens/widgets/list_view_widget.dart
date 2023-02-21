@@ -9,9 +9,12 @@ class ListViewWidget extends StatelessWidget {
     Size size = MediaQuery.of(context).size;
     return SizedBox(
         height: size.height * .4,
-        child: ListView.builder(
+        child: ListView.separated(
             scrollDirection: Axis.horizontal,
             itemCount: 5,
+            separatorBuilder: (index, context) => const SizedBox(
+                  width: 15,
+                ),
             itemBuilder: (context, index) => const ListViewItemWidget()));
   }
 }
